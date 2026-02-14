@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flycore — Autonomous Infrastructure Intelligence</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial,sans-serif}
+body{background:#050505;color:#fff;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:18px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.9);
+border-bottom:1px solid rgba(0,255,255,0.15);
+z-index:1000;
+}
+
+.logo img{
+height:42px;
+width:auto;
+object-fit:contain;
+}
+
+nav a{
+margin-left:28px;
+font-size:13px;
+text-transform:uppercase;
+letter-spacing:1px;
+color:#aaa;
+}
+
+nav a:hover{color:#00ffff}
+
+section{
+padding:120px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.hero{
+position:relative;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+overflow:hidden;
+}
+
+.hero video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+z-index:-1;
+}
+
+.hero-content{
+max-width:900px;
+padding:40px;
+}
+
+.hero h1{
+font-size:clamp(32px,5vw,56px);
+margin-bottom:20px;
+font-weight:600;
+}
+
+.subtitle{
+color:#00ffff;
+margin-bottom:30px;
+font-size:clamp(16px,2vw,20px);
+}
+
+.btn{
+display:inline-block;
+padding:14px 38px;
+background:#00ffff;
+color:#000;
+border-radius:50px;
+font-weight:600;
+}
+
+h2{
+color:#00ffff;
+margin-bottom:40px;
+font-size:clamp(24px,4vw,34px);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:40px;
+}
+
+.card{
+background:#0f0f0f;
+padding:30px;
+border:1px solid rgba(0,255,255,0.12);
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+border-color:#00ffff;
+transform:translateY(-6px);
+}
+
+.architecture{
+background:#0a0a0a;
+padding:40px;
+border:1px solid rgba(0,255,255,0.15);
+border-radius:10px;
+text-align:center;
+line-height:1.8;
+}
+
+.architecture strong{color:#00ffff}
+
+.table-wrapper{
+overflow-x:auto;
+margin-top:40px;
+}
+
+table{
+min-width:900px;
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:16px;
+border:1px solid #222;
+white-space:nowrap;
+}
+
+th{
+background:#111;
+color:#00ffff;
+}
+
+.highlight{
+color:#00ffff;
+font-weight:600;
+}
+
+.cta{
+text-align:center;
+padding:80px 20px;
+border-top:1px solid #111;
+margin-top:80px;
+}
+
+.cta h3{
+font-size:28px;
+margin-bottom:20px;
+}
+
+footer{
+text-align:center;
+padding:50px 20px;
+color:#444;
+}
+
+@media(max-width:768px){
+nav{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<img src="logo.jpg" alt="Flycore Logo">
+</div>
+
+<nav>
+<a href="#architecture">Architecture</a>
+<a href="#capabilities">Capabilities</a>
+<a href="#market">Market</a>
+<a href="#competition">Competition</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<video autoplay muted loop playsinline>
+<source src="hero.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<div class="hero-content">
+<h1>Autonomous Intelligence Layer for Critical Infrastructure</h1>
+<p class="subtitle">Edge-Native • Swarm-Capable • Enterprise-Ready</p>
+<a href="#contact" class="btn">Request Strategic Discussion</a>
+</div>
+</section>
+
+<section id="architecture">
+<h2>System Architecture</h2>
+<div class="architecture">
+<strong>Edge Units</strong> → Autonomous Decision Layer → Secure Control Interface → Infrastructure Network<br><br>
+Fully autonomous operation in disconnected environments with scalable integration into national-scale infrastructure ecosystems.
+</div>
+</section>
+
+<section id="capabilities">
+<h2>Operational Capabilities</h2>
+<div class="grid">
+<div class="card"><h3>Edge AI Autonomy</h3><p>Real-time decision making without cloud latency.</p></div>
+<div class="card"><h3>Swarm Coordination</h3><p>Multi-unit synchronized perimeter intelligence.</p></div>
+<div class="card"><h3>Secure Integration</h3><p>Designed for enterprise and government-grade environments.</p></div>
+<div class="card"><h3>Infrastructure Resilience</h3><p>Optimized for mission-critical industrial assets.</p></div>
+</div>
+</section>
+
+<section id="market">
+<h2>Target Infrastructure Sectors</h2>
+<div class="grid">
+<div class="card"><h3>Aviation Infrastructure</h3><p>Airport perimeter and airside monitoring systems.</p></div>
+<div class="card"><h3>Seaports & Logistics</h3><p>Container terminals and cargo flow security.</p></div>
+<div class="card"><h3>Energy Facilities</h3><p>Refineries, power plants, and pipeline networks.</p></div>
+<div class="card"><h3>High-Risk Perimeters</h3><p>Remote industrial and strategic infrastructure zones.</p></div>
+</div>
+</section>
+
+<section id="competition">
+<h2>Competitive Positioning</h2>
+<div class="table-wrapper">
+<table>
+<tr>
+<th>Capability</th>
+<th>Commercial Drone Vendors</th>
+<th>Defense AI Systems</th>
+<th>Flycore</th>
+</tr>
+<tr>
+<td>Edge Autonomy</td>
+<td>Limited</td>
+<td>Advanced</td>
+<td class="highlight">Full Edge Native</td>
+</tr>
+<tr>
+<td>Swarm Capability</td>
+<td>Experimental</td>
+<td>Defense-Focused</td>
+<td class="highlight">Infrastructure Optimized</td>
+</tr>
+<tr>
+<td>Cloud Dependency</td>
+<td>Required</td>
+<td>Partial</td>
+<td class="highlight">Zero Cloud</td>
+</tr>
+<tr>
+<td>Enterprise Integration</td>
+<td>Medium</td>
+<td>High</td>
+<td class="highlight">High — Infrastructure Focused</td>
+</tr>
+</table>
+</div>
+</section>
+
+<section id="contact" class="cta">
+<h3>Strategic Partnership & Integration</h3>
+<p>Flycore is open to R&D collaboration, pilot deployment programs, and enterprise integration discussions.</p><br>
+<a href="mailto:your@email.com" class="btn">Contact Executive Team</a>
+</section>
+
+<footer>
+© 2026 Flycore — Autonomous Infrastructure Intelligence Platform
+</footer>
+
+</body>
+</html>
